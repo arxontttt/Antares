@@ -1,0 +1,11 @@
+<procedure name="GetIpData" connection="auth0" operate="replaceA"> 
+ <parameter name="uid"      sql-type="integer"      java-type="java.lang.Integer" in="true" out="false" /> 
+ <parameter name="ipdata1"   sql-type="varchar(1000)"  java-type="java.lang.String"  in="false" out="true" />
+</procedure>
+
+<procedure name="AddLoginLog" connection="auth0" operate="replaceA"> 
+ <parameter name="uid"     sql-type="integer"      java-type="java.lang.Integer" in="true" out="false" /> 
+ <parameter name="login1"   sql-type="varchar(30)" java-type="java.lang.String"  in="true" out="false" />
+ <parameter name="ip1"     sql-type="varchar(30)"  java-type="java.lang.String"  in="true" out="false" />
+ <parameter name="act"     sql-type="integer"      java-type="java.lang.Integer" in="true" out="false" /> 
+</procedure>
